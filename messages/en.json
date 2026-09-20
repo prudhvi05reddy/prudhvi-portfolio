@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Software Developer",
+    "subtitle": "Aspiring Software Developer",
+    "location": "Kakinada, Andhra Pradesh • India"
+  },
+
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
