@@ -18,10 +18,10 @@ export default function LanguageSwitcher() {
     <div
       className={`
         flex
-        h-[40px]
+        h-[34px] sm:h-[40px]
         items-center
         rounded-full
-        px-2
+        px-1 sm:px-2
         shadow-lg
         backdrop-blur-md
         transition-all
@@ -39,12 +39,13 @@ export default function LanguageSwitcher() {
           onClick={() => setLanguage(lang.code as any)}
           className={`
             flex
-            h-[40px]
-            min-w-[40px]
+            h-[28px] sm:h-[34px]
+            min-w-[28px] sm:min-w-[38px]
+            px-1 sm:px-2
             items-center
             justify-center
             rounded-full
-            text-[15px]
+            text-xs sm:text-[14px]
             font-semibold
             transition-all
             duration-300

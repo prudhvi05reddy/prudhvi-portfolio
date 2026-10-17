@@ -80,10 +80,10 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative w-full rounded-[32px] border border-[var(--border)] dark:border-white/10 bg-[var(--card)]/80 dark:bg-[#0B0C12]/90 p-8 sm:p-12 md:p-14 backdrop-blur-xl shadow-lg dark:shadow-[0_15px_40px_rgba(0,0,0,0.5)] text-center flex flex-col items-center justify-center"
+          className="relative w-full rounded-[32px] border border-[var(--border)] dark:border-white/10 bg-[var(--card)]/80 dark:bg-[#0B0C12]/90 p-5 sm:p-12 md:p-14 backdrop-blur-xl shadow-lg dark:shadow-[0_15px_40px_rgba(0,0,0,0.5)] text-center flex flex-col items-center justify-center"
         >
           {/* --- MAIN HEADING (48-56px on desktop, Spacing Heading -> Description: 12px) --- */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-[var(--text-primary)] dark:text-white tracking-wide uppercase mb-3 select-none leading-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-[var(--text-primary)] dark:text-white tracking-wide uppercase mb-3 select-none leading-tight">
             {t.heading}
           </h2>
 

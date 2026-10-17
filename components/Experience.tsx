@@ -213,7 +213,7 @@ export default function Experience() {
       <div className="absolute bottom-1/4 left-0 w-[380px] h-[380px] rounded-full bg-[#8A2BE2]/5 dark:bg-[#8A2BE2]/3 blur-[110px] pointer-events-none -z-10" />
 
       {/* Grid Container centered exactly on screen */}
-      <div className="relative w-full max-w-[1250px] px-6 sm:px-12 lg:px-16 mx-auto z-10 flex flex-col">
+      <div className="relative w-full max-w-[1250px] px-3 sm:px-8 lg:px-16 mx-auto z-10 flex flex-col">
         
         {/* Center Section Title with bold tracking and a centered thin orange underline */}
         <motion.div
@@ -221,9 +221,9 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="w-full mb-16 select-none flex flex-col items-center justify-center text-center"
+          className="w-full mb-10 sm:mb-16 select-none flex flex-col items-center justify-center text-center"
         >
-          <h2 className="text-2xl sm:text-3xl uppercase tracking-[8px] text-[var(--text-primary)] font-extrabold">
+          <h2 className="text-xl sm:text-3xl uppercase tracking-[4px] sm:tracking-[8px] text-[var(--text-primary)] font-extrabold">
             {tExp.heading}
           </h2>
           <motion.div
@@ -236,7 +236,7 @@ export default function Experience() {
         </motion.div>
 
         {/* Separated Cards Stack - Generous vertical spacing of 48px to 64px */}
-        <div className="relative w-full flex flex-col gap-12 md:gap-14 lg:gap-16">
+        <div className="relative w-full flex flex-col gap-6 sm:gap-10 md:gap-14 lg:gap-16">
           {tExp.items.map((item: any, index: number) => (
             <motion.div
               key={item.id}
@@ -257,7 +257,7 @@ export default function Experience() {
                 scale: 0.985,
               }}
               
-              className="group relative w-full rounded-[24px] border border-[var(--border)] dark:border-[#F59E0B]/12 bg-[var(--card)]/90 dark:bg-[#0B0B0F]/90 p-8 sm:p-10 lg:p-12 overflow-hidden cursor-default select-none shadow-[0_4px_28px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.25)] hover:shadow-[0_0_35px_rgba(245,158,11,0.06)] dark:hover:shadow-[0_0_45px_rgba(245,158,11,0.1)] hover:border-[#F59E0B]/35 dark:hover:border-[#F59E0B]/40 transition-[box-shadow,border-color] duration-500 backdrop-blur-sm"
+              className="group relative w-full rounded-[24px] border border-[var(--border)] dark:border-[#F59E0B]/12 bg-[var(--card)]/90 dark:bg-[#0B0B0F]/90 p-5 sm:p-8 lg:p-12 overflow-hidden cursor-default select-none shadow-[0_4px_28px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.25)] hover:shadow-[0_0_35px_rgba(245,158,11,0.06)] dark:hover:shadow-[0_0_45px_rgba(245,158,11,0.1)] hover:border-[#F59E0B]/35 dark:hover:border-[#F59E0B]/40 transition-[box-shadow,border-color] duration-500 backdrop-blur-sm"
             >
               {/* Large, transparent backdrop index numbers on the right side */}
               <span

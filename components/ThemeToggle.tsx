@@ -16,8 +16,9 @@ export default function ThemeToggle() {
       }
       className={`
         flex
-        h-[40px]
-        w-[40px]
+        h-[34px] sm:h-[40px]
+        w-[34px] sm:w-[40px]
+        shrink-0
         items-center
         justify-center
         rounded-full
@@ -35,13 +36,11 @@ export default function ThemeToggle() {
     >
       {theme === "dark" ? (
         <FaMoon
-          size={18}
-          className="text-[#FFF8F0]"
+          className="text-[#FFF8F0] text-sm sm:text-lg"
         />
       ) : (
         <FaSun
-          size={18}
-          className="text-[#E27500]"
+          className="text-[#E27500] text-sm sm:text-lg"
         />
       )}
     </button>

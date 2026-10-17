@@ -66,17 +66,20 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[9999] opacity-100 pointer-events-auto transition-all duration-300 ease-in-out">
+    <nav className="fixed bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-[9999] opacity-100 pointer-events-auto transition-all duration-300 ease-in-out max-w-[96vw]">
       <div
         className="
           flex
           items-center
+          gap-1
+          sm:gap-2
           rounded-full
           bg-[#171717]/95
           backdrop-blur-xl
           border
           border-white/10
-          p-2
+          p-1.5
+          sm:p-2
           shadow-[0_15px_40px_rgba(0,0,0,.5)]
         "
       >
@@ -95,23 +98,33 @@ export default function Navbar() {
               transition-all
               duration-300
               ease-in-out
+              whitespace-nowrap
+              select-none
+              text-xs sm:text-sm
 
               ${
                 item.icon
-                  ? "h-11 w-25"
-                  : item.id === "contact"
-                  ? "h-11 w-[100px]"
-                  : "h-11 w-[80px]"
+                  ? "h-9 w-9 sm:h-10 sm:w-10 shrink-0"
+                  : "h-9 sm:h-10 px-3 sm:px-4 shrink-0"
               }
 
               ${
                 active === item.id
-                  ? "bg-[#E27500] text-white shadow-[0_0_15px_rgba(226,117,0,.35)]"
-                  : "text-white/80 hover:text-[#E27500]"
+                  ? "bg-[#E27500] text-white shadow-[0_0_15px_rgba(226,117,0,.45)]"
+                  : "text-white/75 hover:text-white hover:bg-white/5"
               }
             `}
           >
-            {item.icon ? item.icon : item.label}
+            {item.icon ? (
+              <span className="text-sm sm:text-base">{item.icon}</span>
+            ) : item.id === "contact" ? (
+              <>
+                <span className="sm:hidden">Contact</span>
+                <span className="hidden sm:inline">Contact Me</span>
+              </>
+            ) : (
+              item.label
+            )}
           </button>
         ))}
       </div>

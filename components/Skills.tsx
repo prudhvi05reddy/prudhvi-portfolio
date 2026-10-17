@@ -318,7 +318,7 @@ export default function Skills() {
       </div>
 
       {/* Main container centered */}
-      <div className="relative w-full max-w-[1280px] px-6 sm:px-12 lg:px-16 mx-auto z-20 overflow-visible">
+      <div className="relative w-full max-w-[1280px] px-3 sm:px-8 lg:px-16 mx-auto z-20 overflow-visible">
 
         {/* Unified Glassmorphic Panel Card */}
         <motion.div
@@ -329,11 +329,11 @@ export default function Skills() {
           whileHover={{
             boxShadow: "0 0 35px rgba(245, 158, 11, 0.04)",
           }}
-          className="relative w-full rounded-[24px] border border-[var(--border)] dark:border-[#F59E0B]/12 bg-[var(--card)]/90 dark:bg-[#0B0B0F]/90 p-10 sm:p-16 lg:p-20 pb-20 sm:pb-28 lg:pb-32 backdrop-blur-xl overflow-visible shadow-lg dark:shadow-2xl transition-[box-shadow] duration-500"
+          className="relative w-full rounded-[24px] border border-[var(--border)] dark:border-[#F59E0B]/12 bg-[var(--card)]/90 dark:bg-[#0B0B0F]/90 p-5 sm:p-12 lg:p-20 pb-16 sm:pb-28 lg:pb-32 backdrop-blur-xl overflow-visible shadow-lg dark:shadow-2xl transition-[box-shadow] duration-500"
         >
           {/* Header Title with centered Underline */}
-          <div className="relative mb-16 flex flex-col items-center justify-center text-center">
-            <h2 className="text-2xl sm:text-4xl font-extrabold tracking-[7px] uppercase text-[var(--text-primary)] relative z-10 select-none">
+          <div className="relative mb-8 sm:mb-16 flex flex-col items-center justify-center text-center">
+            <h2 className="text-xl sm:text-4xl font-extrabold tracking-[3px] sm:tracking-[7px] uppercase text-[var(--text-primary)] relative z-10 select-none">
               {tSkills.heading}
             </h2>
             <motion.div
